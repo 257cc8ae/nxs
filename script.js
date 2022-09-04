@@ -11,7 +11,7 @@ for (let i = 1; i < 24; i++) {
     dl_area.appendChild(dl_img);
     let a = document.createElement("a");
     a.setAttribute("href", "gallery/IMG_" + String(i) + ".JPG");
-    a.setAttribute("download", "");
+    a.setAttribute("target", "_blank");
     let btn = document.createElement("button");
     btn.textContent = "ダウンロード";
     a.appendChild(btn);

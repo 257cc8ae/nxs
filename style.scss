@@ -140,6 +140,9 @@ main {
             padding: 20px 0;
             text-align: center;
 
+            a {
+                display: block;
+            }
             img {
                 width: 400px;
             }
@@ -419,6 +422,20 @@ footer {
             }
         }
     }
+    footer {
+        .cartoon_area {
+            .footer-anya {
+                img {
+                    width: 150px;
+                }
+            }
+            .footer-comment {
+                font-size: 25px;
+                padding: 15px;
+                border: 3.5px solid #000;
+            }
+        }    
+    }
 }
 
 
@@ -544,6 +561,37 @@ footer {
                 }
             }
         }
+    }
+    footer {
+        .cartoon_area {
+            .footer-anya {
+                img {
+                    width: 150px;
+                }
+            }
+            .footer-comment {
+                font-size: 20px;
+                padding: 13px;
+                border: 3.5px solid #000;
+            }
+        }    
+    }
+}
+
+@media screen and (max-width: 350px) {
+    footer {
+        .cartoon_area {
+            .footer-anya {
+                img {
+                    width: 130px;
+                }
+            }
+            .footer-comment {
+                font-size: 5vw;
+                padding: 3vw;
+                border: 3px solid #000;
+            }
+        }    
     }
 }
 

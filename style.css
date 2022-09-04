@@ -132,6 +132,9 @@ main .gallery .dl-area {
   padding: 20px 0;
   text-align: center;
 }
+main .gallery .dl-area a {
+  display: block;
+}
 main .gallery .dl-area img {
   width: 400px;
 }
@@ -356,6 +359,14 @@ footer .thanks_area img {
     font-size: 30px;
     padding: 20px;
   }
+  footer .cartoon_area .footer-anya img {
+    width: 150px;
+  }
+  footer .cartoon_area .footer-comment {
+    font-size: 25px;
+    padding: 15px;
+    border: 3.5px solid #000;
+  }
 }
 @media screen and (max-width: 950px) {
   .lets_start .logo {
@@ -433,6 +444,24 @@ footer .thanks_area img {
     font-size: 25px;
     padding: 18px;
     margin-left: 5px;
+  }
+  footer .cartoon_area .footer-anya img {
+    width: 150px;
+  }
+  footer .cartoon_area .footer-comment {
+    font-size: 20px;
+    padding: 13px;
+    border: 3.5px solid #000;
+  }
+}
+@media screen and (max-width: 350px) {
+  footer .cartoon_area .footer-anya img {
+    width: 130px;
+  }
+  footer .cartoon_area .footer-comment {
+    font-size: 5vw;
+    padding: 3vw;
+    border: 3px solid #000;
   }
 }
 @media screen and (max-width: 310px) {
