@@ -14,7 +14,6 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 10;
-  display: none;
 }
 .lets_start .container {
   display: inline-block;
