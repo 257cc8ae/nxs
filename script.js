@@ -3,7 +3,7 @@ window.setTimeout(function () {
     console.log("fuck")
 }, 3500);
 
-for (let i = 1; i < 24; i++) {
+for (let i = 1; i < 27; i++) {
     let dl_area = document.createElement("div");
     dl_area.setAttribute("class", "dl-area");
     let dl_img = document.createElement("img");
