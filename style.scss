@@ -1,7 +1,7 @@
 body {
     margin: 0;
     width: 100%;
-
+    font-family: sans-serif;
     background-size: cover;
 }
 
@@ -11,7 +11,7 @@ main {
         height: 100svh;
         position: relative;
         z-index: 9;
-        background-image: url("imgs/bg.webp");
+        background-image: url("imgs/bg.jpg");
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
