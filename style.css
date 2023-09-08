@@ -1,150 +1,68 @@
 body {
   margin: 0;
   width: 100%;
-}
-
-.lets_start {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #1e1e1e;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-}
-.lets_start .container {
-  display: inline-block;
-  text-align: center;
-}
-.lets_start .logo {
-  width: 70vw;
-}
-.lets_start .mission_area {
-  margin-top: 30px;
-  position: relative;
-}
-.lets_start .mission_area .mission,
-.lets_start .mission_area .mission_main {
-  color: #c4c4c4;
-  font-family: serif;
-  font-size: 40px;
-  font-weight: bold;
-}
-.lets_start .mission_area .mission_main {
-  font-size: 60px;
-}
-.lets_start .mission_area .complete {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 200px);
-  width: 400px;
-  transform: rotate(-11deg);
-  filter: drop-shadow(2px 2px 2px #aaa);
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-name: fadeUpAnime;
-          animation-name: fadeUpAnime;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-@-webkit-keyframes fadeUpAnime {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadeUpAnime {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  background-size: cover;
 }
 
 main .welcome {
-  background-color: #8EA99B;
   width: 100%;
-  height: 100vh;
+  height: 100svh;
   position: relative;
   z-index: 9;
-}
-main .welcome .main-lg {
-  position: absolute;
-  width: 600px;
-  top: calc((100vh - 541px) / 2);
-  left: 20px;
-  filter: drop-shadow(2px 2px 2px rgb(231, 231, 231));
-}
-main .welcome .anya_area {
-  bottom: -5px;
-  left: 5px;
-  position: absolute;
-}
-main .welcome .anya_area img {
-  width: 400px;
-}
-main .welcome .comment {
-  background-color: #fff;
-  position: absolute;
-  left: 420px;
-  bottom: 30px;
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
-  font-size: 50px;
-  font-weight: bold;
-  font-family: sans-serif;
-  padding: 30px;
-  border-radius: 100px;
-  border: 5px solid #000;
-}
-main .welcome .gallery_area {
-  width: calc(100% - 600px);
-  height: 100vh;
-  margin-left: auto;
+  background-image: url("imgs/bg.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #464646;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
-main .welcome .gallery_area .img_area {
-  width: 70%;
+main .welcome h1 {
+  color: #fff;
+  font-size: 60px;
+  margin: 0;
   text-align: center;
-}
-main .welcome .gallery_area .img_area img {
-  width: 400px;
+  font-family: "Monoton", cursive;
+  font-weight: 400;
 }
 main .gallery {
-  overflow-x: scroll;
+  background-color: #fafafa;
+  padding-top: 20px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 main .gallery .dl-area {
-  flex: 0 0 auto;
-  width: 450px;
-  padding: 20px 0;
+  width: 95%;
+  max-width: 400px;
+  padding-bottom: 20px;
   text-align: center;
+  background: rgba(255, 255, 255, 0.8235294118);
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(207, 217, 222);
 }
 main .gallery .dl-area a {
   display: block;
 }
 main .gallery .dl-area img {
-  width: 400px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
 }
 main .gallery .dl-area button {
-  background: #E53935;
-  color: #fff;
+  background: #dbecf0;
+  color: #4494aa;
   border: none;
+  font-weight: 700;
   padding: 10px 20px;
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 18px;
+  transition: all 0.2s ease 0s;
+  font-size: 15px;
+  margin-top: 20px;
+  border-radius: 20px;
 }
 main .gallery .dl-ty-1 {
   width: 450px;
@@ -167,8 +85,7 @@ footer .cartoon_area .footer-anya {
 }
 footer .cartoon_area .footer-comment {
   background-color: #fff;
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   font-size: 30px;
   font-weight: bold;
   font-family: sans-serif;
@@ -184,295 +101,4 @@ footer .thanks_area {
 footer .thanks_area img {
   width: 90%;
   max-width: 500px;
-}
-
-@media screen and (max-width: 1100px) {
-  main .welcome {
-    background-color: #8EA99B;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    z-index: 9;
-  }
-  main .welcome .main-lg {
-    position: absolute;
-    width: 500px;
-    top: calc((100vh - 420px) / 2);
-    left: 20px;
-    filter: drop-shadow(2px 2px 2px rgb(231, 231, 231));
-  }
-  main .welcome .anya_area {
-    bottom: -5px;
-    left: 5px;
-    position: absolute;
-  }
-  main .welcome .anya_area img {
-    width: 320px;
-  }
-  main .welcome .comment {
-    background-color: #fff;
-    position: absolute;
-    left: 340px;
-    bottom: 30px;
-    -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
-    font-size: 40px;
-    font-weight: bold;
-    padding: 30px;
-    border-radius: 100px;
-    border: 5px solid #000;
-  }
-  main .welcome .gallery_area {
-    width: calc(100% - 500px);
-    height: 100vh;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  main .welcome .gallery_area .img_area {
-    width: 70%;
-    text-align: center;
-  }
-  main .welcome .gallery_area .img_area img {
-    width: 320px;
-  }
-  main .gallery {
-    overflow-x: scroll;
-    display: flex;
-    background: #fff;
-  }
-  main .gallery .dl-area {
-    flex: 0 0 auto;
-    width: 450px;
-    padding: 20px 0;
-    text-align: center;
-  }
-  main .gallery .dl-area img {
-    width: 400px;
-  }
-  main .gallery .dl-area button {
-    background: #E53935;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-weight: bold;
-    font-family: sans-serif;
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 900px) {
-  main .welcome {
-    background-color: #8EA99B;
-    width: 100%;
-    height: auto;
-    z-index: 9;
-    position: static;
-  }
-  main .welcome .main-lg-area {
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
-  }
-  main .welcome .main-lg {
-    position: static;
-    width: 90%;
-    max-width: 500px;
-  }
-  main .welcome .comic_area {
-    width: 100%;
-    display: inline-flex;
-    justify-content: center;
-    padding: 20px 0;
-  }
-  main .welcome .comic_area .anya_area {
-    flex: 0 0 auto;
-    display: inline-block;
-    position: static;
-  }
-  main .welcome .comic_area .anya_area img {
-    width: 240px;
-  }
-  main .welcome .comic_area .comic_area {
-    flex: 0 0 auto;
-    display: inline-block;
-  }
-  main .welcome .comic_area .comment {
-    position: static;
-    font-size: 35px;
-    padding: 30px;
-    border: 3px solid #000;
-    margin-left: 10px;
-  }
-  main .welcome .gallery_area {
-    width: 100%;
-    height: auto;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  main .welcome .gallery_area .img_area {
-    width: 100%;
-    text-align: center;
-  }
-  main .welcome .gallery_area .img_area img {
-    width: 90%;
-    max-width: 320px;
-  }
-  main .gallery {
-    overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  main .gallery .dl-area {
-    flex: 0 0 auto;
-    width: 50%;
-    padding: 20px 0;
-    text-align: center;
-  }
-  main .gallery .dl-area img {
-    width: 95%;
-    max-width: 400px;
-  }
-  main .gallery .dl-area button {
-    background: #E53935;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-weight: bold;
-    font-family: sans-serif;
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 475px) {
-  main .welcome .comic_area .anya_area img {
-    width: 200px;
-  }
-  main .welcome .comic_area .comic_area {
-    width: 50%;
-    flex: 0 0 auto;
-  }
-  main .welcome .comic_area .comment {
-    font-size: 30px;
-    padding: 20px;
-  }
-  footer .cartoon_area .footer-anya img {
-    width: 150px;
-  }
-  footer .cartoon_area .footer-comment {
-    font-size: 25px;
-    padding: 15px;
-    border: 3.5px solid #000;
-  }
-}
-@media screen and (max-width: 950px) {
-  .lets_start .logo {
-    width: 80vw;
-  }
-  .lets_start .mission_area {
-    margin-top: 20px;
-  }
-  .lets_start .mission_area .complete {
-    width: 300px;
-    left: calc(50% - 150px);
-  }
-  .lets_start .mission_area .mission {
-    font-size: 30px;
-  }
-  .lets_start .mission_area .mission_main {
-    font-size: 50px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .lets_start .logo {
-    width: 95vw;
-  }
-  .lets_start .mission_area {
-    margin-top: 20px;
-  }
-  .lets_start .mission_area .complete {
-    width: 200px;
-    left: calc(50% - 100px);
-  }
-  .lets_start .mission_area .mission {
-    font-size: 25px;
-  }
-  .lets_start .mission_area .mission_main {
-    font-size: 40px;
-  }
-  main .gallery .dl-area {
-    flex: 0 0 auto;
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-  }
-  main .gallery .dl-area img {
-    width: 95%;
-    max-width: 400px;
-  }
-  main .gallery .dl-area button {
-    background: #E53935;
-    color: #fff;
-    border: none;
-    padding: 8px 18px;
-    font-weight: bold;
-    font-family: sans-serif;
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .lets_start .mission_area {
-    margin-top: 15px;
-  }
-  .lets_start .mission_area .mission {
-    font-size: 20px;
-  }
-  .lets_start .mission_area .mission_main {
-    font-size: 35px;
-  }
-  main .welcome .comic_area .anya_area img {
-    width: 180px;
-  }
-  main .welcome .comic_area .comic_area {
-    width: 50%;
-    flex: 0 0 auto;
-  }
-  main .welcome .comic_area .comment {
-    font-size: 25px;
-    padding: 18px;
-    margin-left: 5px;
-  }
-  footer .cartoon_area .footer-anya img {
-    width: 150px;
-  }
-  footer .cartoon_area .footer-comment {
-    font-size: 20px;
-    padding: 13px;
-    border: 3.5px solid #000;
-  }
-}
-@media screen and (max-width: 350px) {
-  footer .cartoon_area .footer-anya img {
-    width: 130px;
-  }
-  footer .cartoon_area .footer-comment {
-    font-size: 5vw;
-    padding: 3vw;
-    border: 3px solid #000;
-  }
-}
-@media screen and (max-width: 310px) {
-  main .welcome .comic_area .anya_area img {
-    width: 160px;
-  }
-  main .welcome .comic_area .comic_area {
-    width: 50%;
-    flex: 0 0 auto;
-  }
-  main .welcome .comic_area .comment {
-    font-size: 20px;
-    padding: 13px;
-  }
 }/*# sourceMappingURL=style.css.map */
